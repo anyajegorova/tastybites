@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 header {
     background-color: var(--main-color-orange);
     height: 251px;
@@ -17,6 +19,10 @@ header {
     .upper-header_container {
         height: 0px;
     }
+
+    .block_container {
+        display: none !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -29,33 +35,37 @@ header {
         width: 100%;
     }
 
+    .block_container {
+        display: none !important;
+    }
+
 }
 
+/** Upper Header **/
 .upper-header_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.lower-header_container {
+.logo_container {
+    color: white;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    height: 84px;
-    width: 90%;
-    align-self: center;
+    align-items: last baseline;
+
 }
-
-.menu {}
-
-.account {}
 
 .logo_container p {
     text-transform: uppercase;
     color: #fff;
     font-size: 38px;
+    padding: 20px;
+}
+
+.logo_container img {
+    max-height: 44px;
+    padding-right: 60px;
 }
 
 .category-links_container {
@@ -73,19 +83,44 @@ header {
     color: var(--burnt-umber)
 }
 
-.logo_container {
-    color: white;
+/** Lower Header **/
+
+.lower-header_container {
     display: flex;
     flex-direction: row;
-    align-items: last baseline;
-
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    height: 84px;
+    width: 90%;
+    align-self: center;
 }
 
-.logo_container p {
-    padding: 20px;
+.block_container {
+    min-width: 608px;
+    height: 155px;
+    background-color: var(--champagne-pink);
+    opacity: 90%;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: var(--burnt-umber);
+    font-size: 38px;
+    line-height: 0px;
+    text-align: start;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 70px;
+    margin-right: 900px;
+    margin-left: min(100px)
 }
 
-.logo_container img {
-    max-height: 44px;
-    padding-right: 60px;
+.block_container i {
+    color: var(--green-secondary);
+}
+
+.text {
+    height: 93px;
+    width: 488px;
+    margin-bottom: 30px;
 }
