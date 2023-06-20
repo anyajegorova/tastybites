@@ -1,10 +1,25 @@
+import React, { useEffect, useState } from 'react';
+
 import './RecipeOfTheDay.css';
 import Time from '../icons/time.png';
 import PastaAlfredo from '../images/pasta_alfredo.jpg';
 import Rating from '@mui/material/Rating';
 
 const RecipeOfTheDay = () => {
+    const [showElement, setShowElement] = useState(false);
+    useEffect(() => {
+        function handleResize() {
+            setShowElement(window.innerWidth <= 480)
+        }
+
+        window.addEventListener('resize', handleResize);
+        handleResize();
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
+    }, [])
     return (
+
         <div className='recipe-card'>
             <div className='block'>
             </div>
@@ -22,6 +37,12 @@ const RecipeOfTheDay = () => {
                         <img src={Time} alt='cooking time' />
                         <p>40 mins</p>
                     </div>
+                    {showElement && (
+                        <div className='mobile-rating'>
+                            <Rating name='read-only' value={5} readOnly sx={{ color: 'var(--green-secondary)' }} />
+                        </div>
+
+                    )}
                 </div>
                 <div className='image-container'>
                     <img src={PastaAlfredo} alt='recipe of the day' />

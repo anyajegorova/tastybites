@@ -8,7 +8,7 @@
 }
 
 .recipe-card {
-    width: 25%;
+    width: 630px;
     height: 90%;
     background-color: var(--champagne-pink);
     opacity: 90%;
@@ -73,4 +73,69 @@
 .recipe-name {
     align-self: flex-start;
     margin-left: 90px;
+}
+
+.mobile-rating {}
+
+@media screen and (max-width: 768px) {
+    .recipe-card {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .recipe-card {
+        width: 50%;
+        background-image: url('../images/pasta_alfredo.jpg');
+        background-size: 363px auto;
+        background-repeat: no-repeat;
+        opacity: 100%;
+        width: 363px;
+        height: 272px;
+        display: flex;
+    }
+
+    .recipe-card .block {
+        display: none;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .info_container {
+        background-color: var(--champagne-pink);
+        width: 50%;
+        height: 90%;
+        opacity: 90%;
+    }
+
+    .recipe-card_main-container {
+        height: 100%;
+        padding-top: 0px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .rating {
+        display: none;
+    }
+
+    .recipe-name {
+        font-size: 16px;
+        font-weight: normal;
+        width: 100px;
+        margin: 10px;
+        align-self: center;
+    }
+
+    .description {
+        margin: 10px;
+        height: 20%;
+    }
+
+    .cooking-time_container img {
+        height: 16px;
+    }
+
 }

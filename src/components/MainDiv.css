@@ -4,12 +4,4 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.card_container {
-    height: 400px;
-}
 
-@media screen and (max-width: 480px){
-    .image_container{
-        max-height: 389px;
-    }
-}
