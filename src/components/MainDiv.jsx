@@ -8,6 +8,7 @@ const MainDiv = () => {
         <div className='main-div'>
             <div className='image_container'>
                 <RecipeOfTheDay />
+                <SearchBar />
             </div>
         </div>
     )

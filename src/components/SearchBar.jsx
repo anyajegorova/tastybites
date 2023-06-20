@@ -5,7 +5,7 @@ const SearchBar = () => {
     return (
         <div className='search-bar_container'>
             <div className='input'>
-                <input />
+                <input type='text' placeholder='Search recipe..' />
             </div>
             <div className='search'>
                 <img src={Search} />

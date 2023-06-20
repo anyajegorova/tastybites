@@ -45,7 +45,7 @@ const RecipeOfTheDay = () => {
                     )}
                 </div>
                 <div className='image-container'>
-                    <img src={PastaAlfredo} alt='recipe of the day' />
+                    <img src={PastaAlfredo} alt='recipe of the day'/>
                 </div>
             </div>
 

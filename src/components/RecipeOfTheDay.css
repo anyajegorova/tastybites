@@ -75,12 +75,37 @@
     margin-left: 90px;
 }
 
-.mobile-rating {}
 
 @media screen and (max-width: 768px) {
+
     .recipe-card {
-        width: 90%;
+        max-width: 420px;
+        height: 50%;
+        background-color: var(--champagne-pink);
+        opacity: 90%;
+        display: flex;
+        margin-right: 20px;
+        align-items: center;
     }
+
+    .recipe-name {
+        font-size: 26px;
+        font-weight: normal;
+        width: 200px;
+        margin: 8px;
+        align-self: center;
+    }
+
+    .cooking-time_container img {
+        height: 21px;
+    }
+
+    .image-container img {
+        margin-top: 0px;
+        max-height: 170px;
+        max-width: 90%;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
