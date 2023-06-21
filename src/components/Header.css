@@ -39,6 +39,15 @@ header {
         display: none !important;
     }
 
+    header {
+        height: 80px;
+    }
+
+    .upper-header_container {
+        height: 0px;
+    }
+
+
 }
 
 /** Upper Header **/
