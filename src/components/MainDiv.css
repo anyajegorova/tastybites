@@ -3,5 +3,20 @@
     height: 960px;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
+.search-grid {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.recipe-of-the-day_container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.buttons_container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.upper-buttons_container {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.lower-buttons_container {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.round-button {
+    background-color: var(--main-color-orange);
+    border-radius: 50px 50px 50px 50px;
+    height: 80px;
+    width: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.chip-button {
+    width: 277px;
+    height: 90px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: var(--green-secondary);
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.special-color {
+    background-color: var(--vegan-green);
+}
+
+.lower-buttons_container button {
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 480px) {
+
+    .lower-buttons_container {
+        display: none;
+    }
+
+    .upper-buttons_container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lower-buttons_container {
+        display: none;
+    }
+
+    .upper-buttons_container {
+        display: none;
+    }
+}

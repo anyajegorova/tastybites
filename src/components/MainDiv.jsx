@@ -8,11 +8,13 @@ const MainDiv = () => {
     return (
         <div className='main-div'>
             <div className='image_container'>
-                <RecipeOfTheDay />
                 <div className='search-grid'>
                     <SearchBar />
+                    <Buttons />
                 </div>
-                
+                <div className='recipe-of-the-day_container'>
+                    <RecipeOfTheDay />
+                </div>
 
             </div>
         </div>

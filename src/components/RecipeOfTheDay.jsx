@@ -7,6 +7,7 @@ import Rating from '@mui/material/Rating';
 
 const RecipeOfTheDay = () => {
     const [showElement, setShowElement] = useState(false);
+    
     useEffect(() => {
         function handleResize() {
             setShowElement(window.innerWidth <= 480)
@@ -45,7 +46,7 @@ const RecipeOfTheDay = () => {
                     )}
                 </div>
                 <div className='image-container'>
-                    <img src={PastaAlfredo} alt='recipe of the day'/>
+                    <img src={PastaAlfredo} alt='recipe of the day' />
                 </div>
             </div>
 

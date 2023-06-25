@@ -50,6 +50,11 @@ header {
 
 }
 
+@media screen and (max-width: 1200px) {
+    
+}
+
+
 /** Upper Header **/
 .upper-header_container {
     display: flex;
@@ -98,22 +103,23 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
     justify-content: space-between;
     height: 84px;
     width: 90%;
     align-self: center;
+    flex-wrap: nowrap;
 }
 
 .block_container {
-    min-width: 608px;
-    height: 155px;
+    min-width: 912px;
+    height: 233px;
     background-color: var(--champagne-pink);
     opacity: 90%;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     color: var(--burnt-umber);
-    font-size: 38px;
+    font-size: 57px;
+    font-weight: bold;
     line-height: 0px;
     text-align: start;
     display: flex;
@@ -129,7 +135,13 @@ header {
 }
 
 .text {
-    height: 93px;
-    width: 488px;
-    margin-bottom: 30px;
+    height: 140px;
+    width: 732px;
+    margin-bottom: 45px;
+}
+
+.account {
+    display: flex;
+    flex-wrap: nowrap;
+
 }

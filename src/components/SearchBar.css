@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .search-bar_container {
-    max-width: 730px;
-    height: 130px;
+    height: 225px;
     background-color: var(--champagne-pink);
     opacity: 90%;
     border-radius: 0 100px 100px 0;
@@ -11,9 +10,10 @@
     justify-content: space-between;
     margin-right: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 100px;
 }
 
-input {
+input[type=text] {
     appearance: none;
     border: none;
     background-color: transparent;
@@ -21,8 +21,11 @@ input {
     font-size: 38px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    margin-left: 40px;
-    max-width: 350px;
+    margin-left: 50px;
+    width: 100%;
+}
+.input {
+    width: 90%;
 }
 
 input:focus {
@@ -40,7 +43,6 @@ input:focus::placeholder {
 
 @media screen and (max-width: 768px) {
     .search-bar_container {
-        max-width: 730px;
         height: 80px;
         background-color: var(--champagne-pink);
         opacity: 90%;
