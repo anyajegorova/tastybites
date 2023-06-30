@@ -22,7 +22,7 @@
     min-width: 8px;
     height: 90%;
     background-color: var(--burnt-umber);
-    margin: 10px;
+    margin-left: 15px;
 }
 
 .image-container img {

@@ -20,3 +20,14 @@
     display: flex;
     justify-content: center;
 }
+
+.cards_container {
+    height: 600px;
+    background-color: var(--champagne-pink);
+    opacity: 80%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
