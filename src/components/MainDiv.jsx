@@ -8,6 +8,10 @@ import Card from './Card';
 
 
 const FetchRecipe = async () => {
+    const apiKey = process.env.REACT_APP_API_KEY;
+
+    const [recipies, setRecepies] = useState([]);
+
     const [start, setStart] = useState(0);
     const [limit, setLimit] = useState(0);
 
@@ -15,7 +19,7 @@ const FetchRecipe = async () => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '1a4d9c3546msh39469e36c2f4292p19abadjsn53dc465850dd',
+            'X-RapidAPI-Key': apiKey,
             'X-RapidAPI-Host': 'yummly2.p.rapidapi.com'
         }
     };
@@ -35,7 +39,6 @@ const cardCount = () => {
 }
 
 const MainDiv = () => {
-
     return (
         <div className='main-div'>
             <div className='image_container'>
